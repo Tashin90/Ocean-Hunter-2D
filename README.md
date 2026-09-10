@@ -2,32 +2,33 @@
 
 <p align="center">
   <strong>A 2D Underwater Fish-Eating Survival Game</strong><br>
-  Built with C++, OpenGL & GLUT
+  Built with <strong>C++, OpenGL & GLUT</strong>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Language-C%2B%2B-blue?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Graphics-OpenGL-red?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Library-GLUT-green?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Platform-Windows-lightgrey?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Language-C%2B%2B-blue?style=for-the-badge" alt="C++">
+  <img src="https://img.shields.io/badge/Graphics-OpenGL-red?style=for-the-badge" alt="OpenGL">
+  <img src="https://img.shields.io/badge/Library-GLUT-green?style=for-the-badge" alt="GLUT">
+  <img src="https://img.shields.io/badge/Platform-Windows-lightgrey?style=for-the-badge" alt="Windows">
 </p>
 
 🎮 Game Preview
 
-Add your real gameplay screenshot here: save the screenshot as
-docs/screenshots/gameplay.png
+<p align="center">
+  <img src="docs/gameplay.png" alt="Ocean Hunter 2D Gameplay" width="850">
+</p>
 
 <p align="center">
-  <img src="docs/screenshots/gameplay.png" alt="Ocean Hunter 2D gameplay screenshot" width="850">
+  <em>Ocean-Hunter-2D gameplay preview</em>
 </p>
 
 📖 About the Game
 
 Ocean-Hunter-2D is a 2D underwater survival game developed as a Computer Graphics project using C++, OpenGL, and GLUT.
 
-The player controls a fish, collects colorful food fish to increase the score, avoids dangerous monster fish, and survives through progressively harder levels.
+The player controls a fish, collects colorful food fish to increase the score, avoids dangerous monster fish, and progresses through increasingly challenging levels.
 
-The game combines real-time movement, collision detection, animated underwater graphics, enemy behavior, power-ups, missions, achievements, and score progression into a complete mini-game experience.
+The game combines real-time movement, collision detection, animated underwater graphics, enemy behavior, power-ups, missions, achievements, combo scoring, and game statistics into a complete mini-game experience.
 
 ✨ Features
 
@@ -37,7 +38,7 @@ The game combines real-time movement, collision detection, animated underwater g
 
 👾 Monster enemy fish
 
-🧠 Enemy AI in the final Hard level
+🧠 Enemy AI in the final Hard level only
 
 ❤️ Three-life system
 
@@ -119,11 +120,11 @@ ESC
 
 Exit
 
-You can also use the mouse to interact with the main menu.
+Mouse input is also supported for interacting with the main menu.
 
 🎯 Game Progression
 
-The game contains three difficulty levels:
+The game contains three difficulty levels.
 
 🟢 Easy
 
@@ -133,6 +134,8 @@ Lower enemy speed
 
 Beginner-friendly gameplay
 
+No enemy AI
+
 🟡 Medium
 
 Increased enemy speed
@@ -140,6 +143,8 @@ Increased enemy speed
 Faster gameplay
 
 More challenging survival
+
+No enemy AI
 
 🔴 Hard
 
@@ -173,41 +178,74 @@ Temporary movement boost
 
 Restores one life
 
-🏅 Achievements
+🔥 Combo System
 
-The game includes achievement tracking such as:
+Eating food fish consecutively within the combo time window increases the combo multiplier.
 
-First Catch — Eat your first fish
+Example:
 
-Combo Master — Reach a high combo
++10
++10
++15
 
-Score 200 — Reach 200 points
+🔥 COMBO x3
 
-Score 500 — Reach 500 points
-
-Survivor — Survive for 60 seconds
-
-Power Hunter — Collect multiple power-ups
+Higher combos provide additional bonus score.
 
 🎯 Mission System
 
-The game includes objectives that reward the player for completing specific goals, such as eating a number of fish.
+The game includes objectives that reward the player for completing specific goals.
 
-Completing a mission provides a bonus score and displays a completion notification.
+Example:
+
+MISSION: Eat 10 fish
+Progress: 7 / 10
+
+Completing a mission awards bonus points and displays a completion notification.
+
+🏅 Achievement System
+
+The game tracks several achievements:
+
+Achievement
+
+Requirement
+
+🐟 First Catch
+
+Eat your first fish
+
+🔥 Combo Master
+
+Reach a high combo
+
+⭐ Score 200
+
+Reach 200 points
+
+🏆 Score 500
+
+Reach 500 points
+
+⏱️ Survivor
+
+Survive for 60 seconds
+
+⚡ Power Hunter
+
+Collect multiple power-ups
 
 🧠 Graphics & Game Concepts
 
-This project demonstrates several Computer Graphics and game-development concepts:
+This project demonstrates important Computer Graphics and game-development concepts, including:
 
 2D object rendering
 
 Geometric primitives
 
-Transformations
-
 Translation and scaling
 
-Animation
+Object animation
 
 Real-time keyboard input
 
@@ -225,7 +263,7 @@ Difficulty progression
 
 Basic enemy AI
 
-Randomized spawning
+Randomized object spawning
 
 Timer-based game updates
 
@@ -248,69 +286,65 @@ Ocean-Hunter-2D/
 ├── main.cpp
 ├── FinalProject.cbp
 ├── Group3.pdf
-├── highscore.txt
+├── README.md
+│
 ├── docs/
-│   └── screenshots/
-│       └── gameplay.png
+│   └── gameplay.png
 │
 ├── bin/
 └── obj/
 
-bin/ and obj/ are build-generated directories and normally do not need to be committed to the repository.
+bin/ and obj/ are build-generated directories and are normally not required in the source repository.
 
 🚀 How to Run
 
-1. Clone the repository
+1. Clone the Repository
 
-git clone https://github.com/YOUR-USERNAME/Ocean-Hunter-2D.git
+git clone https://github.com/Tashin90/Ocean-Hunter-2D.git
 cd Ocean-Hunter-2D
 
-2. Open the project
+2. Open the Project
 
 Open:
 
 FinalProject.cbp
 
-with Code::Blocks.
+using Code::Blocks.
 
-3. Build and run
+3. Build and Run
 
-Use:
+In Code::Blocks:
 
 Build → Rebuild
 Build → Run
 
-Make sure your GLUT/OpenGL development libraries are configured correctly in Code::Blocks.
+Make sure the required OpenGL and GLUT libraries are correctly configured in Code::Blocks.
 
 📸 Screenshots
 
-Place gameplay screenshots inside:
+Gameplay
 
-docs/screenshots/
-
-Recommended files:
-
-gameplay.png
-main-menu.png
-hard-level.png
-game-over.png
-
-Then add them to this README with:
-
-![Gameplay](docs/screenshots/gameplay.png)
+<p align="center">
+  <img src="docs/gameplay.png" alt="Gameplay Screenshot" width="850">
+</p>
 
 📄 Project Report
 
-The project report is available in:
+The complete project report is available here:
 
-Group3.pdf
+📄 Group3.pdf
 
-👥 Project
+👥 Project Information
 
-Ocean-Hunter-2D
-Computer Graphics Project
+Project Name: Ocean-Hunter-2D
+Project Type: Computer Graphics Project
+Language: C++
+Graphics API: OpenGL
+Library: GLUT
+IDE: Code::Blocks
+Platform: Windows
 
-📌 Future Improvements
+🔮 Future Improvements
 
 Possible future enhancements include:
 
@@ -322,7 +356,7 @@ Possible future enhancements include:
 
 🐙 More enemy types
 
-🌟 More power-ups
+🌟 Additional power-ups
 
 🥇 Online leaderboard
 
@@ -331,5 +365,5 @@ Possible future enhancements include:
 🎨 Improved graphical assets
 
 <p align="center">
-  Made with ❤️ using C++, OpenGL & GLUT
+  Made with ❤️ using <strong>C++, OpenGL & GLUT</strong>
 </p>
